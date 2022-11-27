@@ -112,7 +112,7 @@ paginate = 50
 [[menu.topbar]]
     weight = 1
     name = "GitHub"
-    url = "https://github.com/Bioconductor/BioC2022"
+    url = "https://github.com/Bioconductor/"
     pre = "<i class='fab fa-2x fa-github'></i>"
 
 # [[menu.topbar]]
@@ -136,7 +136,7 @@ paginate = 50
 [[menu.topbar]]
     weight = 5
     name = "Slack"
-    url = "https://bioc-community.herokuapp.com/"
+    url = "https://slack.bioconductor.org/"
     pre = "<i class='fab fa-2x fa-slack'></i>"
 
 [params]
@@ -178,7 +178,7 @@ paginate = 50
     contact_form_ajax = false
 
     about_us = "<p>Bioconductor conference highlights current developments within and beyond the Bioconductor project.</p>"
-    copyright = "Copyright (c) 2020 - 2022, Bioconductor."
+    copyright = "Copyright (c) 2020 - 2023, Bioconductor."
 
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
