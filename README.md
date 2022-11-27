@@ -26,8 +26,8 @@ template.
 2. Clone the new repository and switch to it. For example:
 
 ```shell
-git clone git@github.com:Bioconductor/BioC2022.git
-cd BioC2022/
+git clone git@github.com:Bioconductor/BioC_template.git
+cd BioC_template/
 ```
 
 3. Edit the site.
@@ -44,7 +44,7 @@ View the results at http://localhost:1313/
 as described [here](https://bookdown.org/yihui/blogdown/netlify.html). 
 Use build command `hugo`, publish directory `public`,
 and set advanced variable `HUGO_VERSION` to your `hugo version` number,
-e.g., 0.76.5
+e.g., 0.105.0
 
 This template was created using the modified
 [hugo-universal-theme](https://github.com/devcows/hugo-universal-theme).
@@ -138,4 +138,31 @@ bash create_tracks.sh
 * NOTE - For the "time" column, set format to custom "hh:mm" (IMPORTANT)
 * Run the code
 * Output files are generated in the "yaml_output" folder 
+
+
+======
+
+# data
+
+YAML files that need to be adjusted for each conference. 
+
+## abstracts
+
+YAML files for every event. `Workshop_paper` are processed by [content/workshops.md](content/workshops.md) and [layouts/shortcodes/workshops.html](layouts/shortcodes/workshops.html). All events are processed by [layouts/shortcodes/schedule.html](layouts/shortcodes/schedule.html).
+
+## carousel
+
+YAML files for the carousel panels. Processed by the main theme.
+
+## clients
+
+YAML files for sponsors. Processed by the main theme and [layouts/shortcodes/sponsors.html](layouts/shortcodes/sponsors.html)
+
+## organizers
+
+YAML files for cochairs and committee. Processed by [content/organizers.md](content/organizers.md), [layouts/shortcodes/cochairs.html](layouts/shortcodes/cochairs.html) and [layouts/shortcodes/committee.html](layouts/shortcodes/committee.html).
+
+## speakers
+
+YAML files for each speaker. Processed by [layouts/partials/speakers.html](layouts/partials/speakers.html).
 
