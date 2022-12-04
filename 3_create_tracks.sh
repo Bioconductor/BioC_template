@@ -5,15 +5,16 @@
 
 ## Delete previously created track files
 rm -rf content/abstracts/track*.md
+mkdir -p content/abstracts
 
-for i in $(ls data/abstracts/*track*.yaml | sed -e "s|data/abstracts/\(.\+track[0-9]*\)\.yaml$|\1|")
+for i in $(ls data/abstracts/*track*.yaml)
 do
 
     echo Creating page for $i
 
-    title=$(grep -e "title:" data/abstracts/$i.yaml | sed -e "s/title: \"\(.\+\)\"/\1/")
-    session_type=$(grep -e "session_type:" data/abstracts/$i.yaml | sed -e "s/session_type: \"\(.\+\)\"/\1/")
-    paper=$(grep -e "paper:" data/abstracts/$i.yaml | sed -e "s/paper: \"\(track.\+\)\"/\1/")
+    title=$(grep -e "title:" $i | sed "s/title: \"//" | sed "s/\"$//")
+    session_type=$(grep -e "session_type:" $i | sed "s/session_type: \"//" | sed "s/\"$//")
+    paper=$(grep -e "paper:" $i | sed -e "s/paper: \"//"  | sed "s/\"$//")
 
     echo title is $title
     echo session_type is $session_type
