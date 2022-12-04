@@ -1,6 +1,4 @@
 
-> Currently, this repo is a draft. Not ready to create the website yet.
-
 # Bioconductor conference template website
 
 This repository contains material for the Bioconductor annual conference. 
