@@ -16,6 +16,10 @@ Check Hugo version
 hugo version
 ```
 
+## Branches
+
+[master](https://github.com/Bioconductor/BioC_template/tree/master) branch contains a minimal set of files to create the conference website. [master-full](https://github.com/Bioconductor/BioC_template/tree/master-full) contains additional files in subfolders [content/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/content/abstracts), [content/news](https://github.com/Bioconductor/BioC_template/tree/master-full/content/news), [data/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/data/abstracts) with additional examples of YAML files (mirror from the [BioC2022](https://github.com/Bioconductor/BioC2022) repository).
+
 ## Create a new repository
 
 1. Create a new repository in https://github.com/Bioconductor using this
