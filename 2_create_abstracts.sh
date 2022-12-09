@@ -6,15 +6,16 @@
 
 ## Delete previously created abstracts
 rm -rf content/abstracts/paper*.md
+mkdir -p content/abstracts
 
-for i in $(ls data/abstracts/*paper*yaml | sed -e "s|data/abstracts/\(.\+paper.\+\)\.yaml$|\1|")
+for i in $(ls data/abstracts/*paper*yaml)
 do
 
     echo Creating abstract page for $i
 
-    title=$(grep -e "title" data/abstracts/$i.yaml | sed -e "s/title: \"\(.\+\)\"/\1/")
-    session_type=$(grep -e "session_type" data/abstracts/$i.yaml | sed -e "s/session_type: \"\(.\+\)\"/\1/")
-    paper=$(grep -e "paper" data/abstracts/$i.yaml | sed -e "s/paper: \"\(paper.\+\)\"/\1/")
+    title=$(grep -e "title" $i | sed -e "s/title: \"//" | sed "s/\"$//")
+    session_type=$(grep -e "session_type" $i | sed "s/session_type: \"//" | sed "s/\"$//")
+    paper=$(grep -e "paper" $i | sed "s/paper: \"//" | sed "s/\"$//")
     
     echo -e "---
 title: \"$title\"
