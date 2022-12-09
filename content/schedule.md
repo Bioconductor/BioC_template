@@ -3,6 +3,9 @@ title = "Schedule"
 description = "Schedule"
 +++
 
+### Coming soon
+
+<!--
 + [All short talks](../tags/short-talk/)
 + [All workshops and package demos](../workshops/)
 + Conference videos will appear on the [R Consortium](https://www.youtube.com/c/RConsortium) YouTube channel - subscribe!
@@ -10,6 +13,7 @@ description = "Schedule"
 {{< schedule date="Wednesday, July 27, 2022" day="day1">}}
 {{< schedule date="Thursday, July 28, 2022" day="day2">}}
 {{< schedule date="Friday, July 29, 2022" day="day3">}}
+-->
 
 <!--The conference will be held on the [Airmeet](https://www.airmeet.com/) virtual platform. Please, refer to the [Guide for participants](https://youtu.be/FvvZzcwlyv4) video and the [step-by-step guide how to use Airmeet](https://www.airmeet.com/hub/product-blog/step-by-step-guide-use-airmeet-for-attendees/). Please note there are no options to blur or hide your background in Airmeet; use third-party software if the blur is necessary.
 

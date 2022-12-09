@@ -3,7 +3,7 @@ title = "Code of conduct"
 description = "Code of conduct"
 +++
 
-This code of conduct was developed for the BioC2022 conference. For more details, see the [Bioconductor Code of Conduct](https://www.bioconductor.org/about/code-of-conduct/)
+This code of conduct was developed for the Bioconductor conferences. For more details, see the [Bioconductor Code of Conduct](https://www.bioconductor.org/about/code-of-conduct/)
 <!-- The original Code of Conduct is copy-pasted and quoted below -->
 
 ## Social media policy
@@ -18,7 +18,7 @@ conference experience for everyone, regardless of:
 physical appearance, body size, race, age, or religion. 
 * intellectual position: approaches to data analysis, software preferences, coding style, scientific perspective, etc.
 
-The Virtual Event Code of Conduct applies to EuroBioC2022 virtual events and communications, including but not limited to the virtual platform, talks, workshops, poster sessions, social activities, slack, online and social media communications. We do not tolerate harassment, intimidation, or bullying of conference participants. Sexual language and imagery are not appropriate in presentations, communications, in online venues, including chats. 
+The Virtual Event Code of Conduct applies to BioC virtual events and communications, including but not limited to the virtual platform, talks, workshops, poster sessions, social activities, slack, online and social media communications. We do not tolerate harassment, intimidation, or bullying of conference participants. Sexual language and imagery are not appropriate in presentations, communications, in online venues, including chats. 
 
 Conference participants violating these rules may be sanctioned or expelled from the conference with no refund, 
 at the discretion of the conference organizers. 
@@ -79,16 +79,16 @@ For Code of Conduct in other languages, see [bioc_coc_multilingual](https://kevi
 
 ### Code of Conduct violation reports 
 
-* Email: [code-of-conduct@bioconductor.org](mailto:workshop@bioconductor.org?subject=BioC2019%20code-of-conduct)
+* Email: [code-of-conduct@bioconductor.org](mailto:workshop@bioconductor.org?subject=BioC%20code-of-conduct)
 * Anonymous Code of Conduct violation reports: [https://tinyurl.com/bioccomplaint](https://tinyurl.com/bioccomplaint)
-* Law enforcement emergency number: 112
+* Law enforcement emergency number: 911 (US) / 112 (EU)
 
 ### Updates to the Code of Conducts
 [The Bioconductor Code of Conduct Committee](https://bioconductor.github.io/bioc_coc_multilingual/index.html) provide the most recent version of the Code of Conduct and translations in several languages. 
 
-### Code of Conduct Bioc2022 Conference Committee
+### Code of Conduct Bioconductor Conference Committee
 
 |       |   |     |   |      |
 |:-----:|---|:---:|---|:----:|
 | ![](../img/organizers/Aedin.jpg) | &nbsp; | ![](../img/organizers/LeviWaldron.jpg) | &nbsp; | ![](../img/organizers/LaurentGatto.png) |
-| [Aedin Culhane](mailto:aedin@jimmy.harvard.edu?subject=BioC2019%20code-of-conduct) | &nbsp;  | [Levi Waldron](mailto:lwaldron.research@gmail.com?subject=BioC2019%20Code-of-conduct) | &nbsp; | [Laurent Gatto](mailto:laurent.gatto@uclouvain.be?subject=BioC2019%20Code-of-conduct) |
+| [Aedin Culhane](mailto:aedin@jimmy.harvard.edu?subject=BioC%20code-of-conduct) | &nbsp;  | [Levi Waldron](mailto:lwaldron.research@gmail.com?subject=BioC%20Code-of-conduct) | &nbsp; | [Laurent Gatto](mailto:laurent.gatto@uclouvain.be?subject=BioC%20Code-of-conduct) |

@@ -3,32 +3,30 @@ title = "Registration"
 description = "Registration"
 +++
 
+### Coming soon
+
+<!--
 ### Registration is now open for the BioC22 conference. You have two ticket options:
 
 1. Tickets for virtual attendance are now available on Eventbrite at https://bioc2022.eventbrite.com.
 
-<!--
 2. Tickets for in-person attendance of the conference in Seattle, Washington (USA) are currently limited due to COVID capacity limits at the venue. As of 5/31/22, we have 20 in-person tickets available. You can register at https://bioc2022.eventbrite.com.
 If tickets have sold out, please email conference@bioconductor.org to be placed on a wait list. 
 Both tickets provide access to all conference sessions. We will have a variety of in-person and virtual speakers. Anyone who does not get an in-person ticket will be able to secure a virtual ticket.
--->
 
 #### Registration cost
 
-<!--
 - $400 academic in person
 - $250 student in person
--->
 - $50 academic virtual
 - $10 student virtual
+-->
 
 <!--
 If you require scholarship assistance to attend the conference virtually, please complete this form: https://forms.gle/YotNvDzx8qWjnQ3D7. Scholarships for virtual attendance will be assessed on a rolling basis. 
 
 We are no longer accepting requests for in-person scholarships. 
 -->
-
-#### Seattle's <a href="../Local_Hotels_Seattle.pdf" target="_blank">conference hotels</a>, <a href="../Local_Restaurants_Seattle.pdf" target="_blank">restaurants</a>, <a href="../Local_Activities.pdf" target="_blank">activities</a>, <a href="../Link_Light_Rail.pdf" target="_blank">transportation</a>
 
 <!--
 ## [Registration to the virtual Bioc2021 conference is now open!](https://www.airmeet.com/e/3124e6e0-8b3d-11eb-adfc-b1c12ad96800)

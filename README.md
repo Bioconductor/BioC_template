@@ -18,7 +18,8 @@ hugo version
 
 ## Branches
 
-[master](https://github.com/Bioconductor/BioC_template/tree/master) branch contains a minimal set of files to create the conference website. [master-full](https://github.com/Bioconductor/BioC_template/tree/master-full) contains additional files in subfolders [content/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/content/abstracts), [content/news](https://github.com/Bioconductor/BioC_template/tree/master-full/content/news), [data/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/data/abstracts) with additional examples of YAML files (mirror from the [BioC2022](https://github.com/Bioconductor/BioC2022) repository).
+- [master](https://github.com/Bioconductor/BioC_template/tree/master) branch contains a minimal set of files to create the conference website. 
+- [master-full](https://github.com/Bioconductor/BioC_template/tree/master-full) contains additional files in subfolders [content/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/content/abstracts), [content/news](https://github.com/Bioconductor/BioC_template/tree/master-full/content/news), [data/abstracts](https://github.com/Bioconductor/BioC_template/tree/master-full/data/abstracts) with additional files (mirror from the [BioC2022](https://github.com/Bioconductor/BioC2022) repository).
 
 ## Create a new repository
 
@@ -32,7 +33,15 @@ git clone git@github.com:Bioconductor/BioC_template.git
 cd BioC_template/
 ```
 
-3. Edit the site.
+3. Edit the site
+
+- [config.toml](https://github.com/Bioconductor/BioC_template/tree/master/config.toml)
+- .md files in the [content](https://github.com/Bioconductor/BioC_template/tree/master/content/) folder
+- .yaml files in [data/carousel](https://github.com/Bioconductor/BioC_template/tree/master/data/carousel/) (create a new hex logo, open an [issue](https://github.com/Bioconductor/BiocStickers/issues) on [BiocStickers](https://github.com/Bioconductor/BiocStickers/))
+- rename [data/committee.all](https://github.com/Bioconductor/BioC_template/tree/master/data/committee.all/) folder to `committee` and adjust committee members
+- add [data/speakers](https://github.com/Bioconductor/BioC_template/tree/master/data/speakers/)
+- add sponsors to [data/clients](https://github.com/Bioconductor/BioC_template/tree/master/data/clients/) and [static/img/clients](https://github.com/Bioconductor/BioC_template/tree/master/static/img/clients/) (take logos from [Google Drive]())
+- Edit the front page [news.html](https://github.com/Bioconductor/BioC_template/tree/master/layouts/partials/news.html)
 
 4. Run Hugo to preview the webpage locally.
 
