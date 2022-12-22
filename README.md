@@ -36,6 +36,7 @@ cd BioC_template/
 3. Edit the site
 
 - [config.toml](https://github.com/Bioconductor/BioC_template/tree/master/config.toml)
+    - Adjust color style: style = "blue" (default), light-blue), green, marsala, pink, red, turquoise, violet
 - .md files in the [content](https://github.com/Bioconductor/BioC_template/tree/master/content/) folder
 - .yaml files in [data/carousel](https://github.com/Bioconductor/BioC_template/tree/master/data/carousel/) (create a new hex logo, open an [issue](https://github.com/Bioconductor/BiocStickers/issues) on [BiocStickers](https://github.com/Bioconductor/BiocStickers/))
 - rename [data/committee.all](https://github.com/Bioconductor/BioC_template/tree/master/data/committee.all/) folder to `committee` and adjust committee members
