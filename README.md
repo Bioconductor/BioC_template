@@ -58,15 +58,6 @@ Use build command `hugo`, publish directory `public`,
 and set advanced variable `HUGO_VERSION` to your `hugo version` number,
 e.g., 0.105.0
 
-This template was created using the modified.
-[hugo-universal-theme](https://github.com/devcows/hugo-universal-theme).
-See the [demo web site](https://themes.gohugo.io/theme/hugo-universal-theme/),
-the original [github repository](https://github.com/devcows/hugo-universal-theme)
-and the [exampleSite files](https://github.com/devcows/hugo-universal-theme/tree/master/exampleSite).
-Template by [Bootstrapious](https://bootstrapious.com/p/universal-business-e-commerce-template).
-Ported to Hugo by [DevCows](https://github.com/devcows/hugo-universal-theme).
-The theme is added as selected files, not as a submodule, for easier modification.
-
 # Adding items to the schedule table
 
 1. Make changes in the "schedule table" spreadsheet https://docs.google.com/spreadsheets/d/1tGtGffcbCRxQFjE3ej42IcWlN4FJCsuQeZvETt9g0oA/edit#gid=0. NOTE - For the "time" column, set the format to custom "hh:mm" (IMPORTANT)
@@ -135,3 +126,13 @@ YAML files for co-chairs and committee. Processed by [content/organizers.md](con
 
 YAML files for each speaker. Processed by [layouts/partials/speakers.html](layouts/partials/speakers.html).
 
+# Disclaimer
+
+This template was created using the modified.
+[hugo-universal-theme](https://github.com/devcows/hugo-universal-theme).
+See the [demo web site](https://themes.gohugo.io/theme/hugo-universal-theme/),
+the original [github repository](https://github.com/devcows/hugo-universal-theme)
+and the [exampleSite files](https://github.com/devcows/hugo-universal-theme/tree/master/exampleSite).
+Template by [Bootstrapious](https://bootstrapious.com/p/universal-business-e-commerce-template).
+Ported to Hugo by [DevCows](https://github.com/devcows/hugo-universal-theme).
+The theme is added as selected files, not as a submodule, for easier modification.
