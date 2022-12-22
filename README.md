@@ -58,6 +58,8 @@ Use build command `hugo`, publish directory `public`,
 and set advanced variable `HUGO_VERSION` to your `hugo version` number,
 e.g., 0.105.0
 
+6. To add an official URL/domain, e.g., bioc2023.bioconductor.org, first, contact [Lori](https://github.com/lshep) to create it. Second, login to Netlify, select the site, click "Domain settings" button, then "Add custom domain". Add the official URL when prompted and click "Verify". You'll get a message "bioconductor.org is already registered. If you registered this domain name through a different registrar, select Add subdomain to begin delegating it to Netlify." Click "Add subdomain", and the official domain will be added. Click "Check DNS configuration" and check how to update the CNAME recors. It'll take up to 24 hours before the changes will take effect.
+
 # Adding items to the schedule table
 
 1. Make changes in the "schedule table" spreadsheet https://docs.google.com/spreadsheets/d/1tGtGffcbCRxQFjE3ej42IcWlN4FJCsuQeZvETt9g0oA/edit#gid=0. NOTE - For the "time" column, set the format to custom "hh:mm" (IMPORTANT)
