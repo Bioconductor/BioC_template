@@ -48,7 +48,7 @@ cd BioC_template/
 4. Run Hugo to preview the webpage locally.
 
 ```shell
-rm -rf public; hugo --verbose; hugo server --disableFastRender --verbose
+rm -rf public; hugo; hugo server --disableFastRender
 ```
 
 View the results at http://localhost:1313/
