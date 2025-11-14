@@ -1,85 +1,63 @@
 
-library(stringr)
-
 gsheet <- 'https://docs.google.com/spreadsheets/d/1tGtGffcbCRxQFjE3ej42IcWlN4FJCsuQeZvETt9g0oA/gviz/tq?tqx=out:csv&sheet=schedule_table'
 fname <- tempfile()
 download.file(url = gsheet, destfile = fname, quiet = TRUE)
-schedule <- read.csv(fname)
-## For some reason there are several extra columns with just NAs.
-## We can remove those columns with a vector (discard_lgl)
-discard_lgl <- vapply(schedule, function(x) all(is.na(x)), logical(1))
-schedule <- schedule[,!discard_lgl]
+data <- read.csv(fname)
+discard_lgl <- vapply(data, function(x) all(is.na(x)), logical(1))
+data <- data[,!discard_lgl]
+data$time <- sub("^.+ (.+):00", "\\1", data$time)
 
 output_dir <- 'data/abstracts/'
-message('Creating yaml files in ', output_dir)
-
-#use "" instead of NAs
-scheduleBlank <- schedule #make copy
-# scheduleBlank[is.na(scheduleBlank)] <- "" 
-
-##  datetime to character
-scheduleBlank$time <- sub("^.+ (.+):00", "\\1", scheduleBlank$time)
 
 if (!file.exists(output_dir)) {
+    message('Creating yaml files in ', output_dir, '.')
     dir.create(output_dir)
 } else {
-    ## Overwrite whatever output was generated before
+    message('Replacing content in ', output_dir, '.')
     unlink(output_dir, recursive = TRUE)
     dir.create(output_dir)
 }
 
-
-iCount = 1
-
-while (iCount <= nrow(scheduleBlank)) {
+for (i in 1:nrow(data)) {
+    one_row <- data[i,, drop = FALSE]
+    yaml_filename <- paste0(
+        one_row$day, "_",
+        one_row$time, "_",
+        one_row$session_type, "_",
+        one_row$paper,
+        '.yaml'
+    ) |> 
+        {\(y) gsub(" |:", '', y)}() |> 
+        {\(y) sub('_.yaml$', '.yaml', y)}()
     
-    oneRow <- scheduleBlank[iCount, ]
-    
-    fileNameSpace <- paste(oneRow$day, "_",
-                           oneRow$time, "_",
-                           oneRow$session_type,"_",
-                           oneRow$paper,
-                           ".yaml", 
-                           sep = "" )
-   fileNameFinal <- gsub(" |:", '', fileNameSpace) 
-    # fileNameFinal <- str_replace_all(string = fileNameSpace, 
-                                     # pattern =  c(" |:"), 
-                                     # replacement =   '')
-    
-    fileNameFinal <- sub("_.yaml$", ".yaml", fileNameFinal)
-    
-    iCount2 = 1
-    while (iCount2 <= ncol(oneRow)) {
+    for (j in seq_along(one_row)) {
         
+        one_value_name <- names(one_row)[j]
+        one_value <- one_row[j]
         
-        oneValueName <- names(oneRow)[iCount2]
-        oneValue <- paste("\"",unlist(oneRow[iCount2]),"\"", sep = "")
-        
-        if (oneValueName == "talks" && any(grepl("paper", oneValue))) {
-            oneValue <- sub("^\"(.+)\"$", "\\1", oneValue)
+        if (one_value_name == 'abstract') {
+            one_value <- gsub('"', '', one_value)
         }
         
-        # write to file for the first time. Create new file
-        if (iCount2 == 1) {
-            # create file , no append
-            line <- paste0(oneValueName, ": ", oneValue)
-            write.table(line, col.names = FALSE, row.names = FALSE, 
-                        file = paste(output_dir, 
-                                     fileNameFinal, sep = ""), 
-                        append = FALSE, 
-                        quote = FALSE, )
-            
-        } else {
-            # append to existing file
-            line <- paste0(oneValueName, ": ", oneValue)
-            write.table(
-            x = line, col.names = FALSE, row.names = FALSE,
-            file = paste0(output_dir, fileNameFinal), append = TRUE, quote = FALSE
-            )
-        } 
+        one_value <- paste0("\"", one_value, "\"")
         
-        iCount2 <- iCount2 + 1
+        if (one_value_name == "talks" && any(grepl("paper", one_value))) {
+            one_value <- sub("^\"(.+)\"$", "\\1", one_value)
+        }
+        
+        line <- paste0(one_value_name, ": ", one_value)
+        filename <- paste0(output_dir, yaml_filename)
+        
+        if (j == 1) {
+            write.table(
+                x = line, col.names = FALSE, row.names = FALSE, 
+                file = filename, append = FALSE, quote = FALSE
+            )
+        } else {
+            write.table(
+                x = line, col.names = FALSE, row.names = FALSE, 
+                file = filename, append = TRUE, quote = FALSE
+            )
+        }
     }
-    
-    iCount <- iCount + 1
 }
